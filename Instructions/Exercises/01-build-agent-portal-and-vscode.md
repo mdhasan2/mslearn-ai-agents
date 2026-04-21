@@ -233,8 +233,6 @@ Now let's create a client application that interacts with your agent programmati
         load_dotenv()
         project_endpoint = os.environ.get("PROJECT_ENDPOINT")
         agent_name = os.environ.get("AGENT_NAME", "it-support-agent")
-
-1. Save the `agent_with_functions.py` file (**Ctrl+S** or **File > Save**).
         
         if not project_endpoint:
             print("Error: PROJECT_ENDPOINT environment variable not set")
@@ -348,6 +346,8 @@ Now let's create a client application that interacts with your agent programmati
     if __name__ == "__main__":
         main()
     ```
+    
+1. Save the `agent_with_functions.py` file (**Ctrl+S** or **File > Save**).
 
 ### Configure environment and run the application
 
