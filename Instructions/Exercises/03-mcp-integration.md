@@ -216,9 +216,6 @@ In this task, you'll connect to a remote MCP server, prepare the AI agent, and r
        if not input_list:
            break
 
-       print("Final input:")
-       print(input_list)
-
        # Send the approval response back and retrieve the next response
        response = openai_client.responses.create(
            input=input_list,
@@ -260,9 +257,7 @@ Now you're ready to run the application and see how the agent uses the MCP tool 
     ```
     Agent created (id: MyAgent:2, name: MyAgent, version: 2)
     Created conversation (id: conv_086911ecabcbc05700BBHIeNRoPSO5tKPHiXRkgHuStYzy27BS)
-    Final input:
-    [{'type': 'mcp_approval_response', 'approve': True, 'approval_request_id': '{approval_request_id}'}]
-
+    
     Agent response: Here are Azure CLI commands to create an Azure Container App with a managed identity:
 
     **1. For a System-assigned Managed Identity**
