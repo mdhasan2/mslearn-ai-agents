@@ -96,7 +96,7 @@ Now you'll upload sample product information documents to connect to with Foundr
 1. Once created, go to the storage account you created and select **Upload** from the top bar.
 1. In the **Upload blob** blade, create a new container named `contosoproducts`.
 1. Browse for the files extracted from the zip file, select all 3 PDF files, and select **Upload**.
-1. Once your files are uploaded, navigate to the search service you created throught the Foundry portal.
+1. Once your files are uploaded, navigate to the search service you created.
 1. On the left pane, under **Security + networking** > **Keys**, select **Both** for API Access control and confirm the selection. Once complete, leave the Azure Portal tab open and navigate back to the Foundry portal tab and refresh the page.
 1. Verify you are on the **Knowledge** page, select **Create a knowledge base**, choosing **Azure Blob Storage** as your knowledge source, then select **Connect**.
 1. Configure your knowledge source with the following settings:
@@ -112,7 +112,8 @@ Now you'll upload sample product information documents to connect to with Foundr
 1. On the knowledge base creation page, select the `gpt-5` model from the **Chat completions model** dropdown, leaving the rest of the field defaults as is.
 1. Select **Save knowledge base**, and then refresh your browser to verify the knowledge source status is *active*. If it isn't yet, wait a minute and refresh your page until it is.
 1. Select the back button to return to the **Knowledge** page, then select the **Manage** link next to the *Connection* drop-down.
-1. Scroll down to the **Connected resources**, where you should see your search service. Select that row, find the **Authentication** section, and select **Edit authentication**.
+1. Scroll down to the **Connected resources**, where you should see your search service. Select that row, find the **Authentication** section.
+1. Select **Key authentication** and then select **Edit authentication**.
 1. Leaving the dialog open, return to the Azure portal tab which should still be on your search service **Keys** page. Copy one of those keys into the dialog in Foundry and select **Save**.
 
 Your Foundry IQ settings should now be complete.
@@ -150,6 +151,9 @@ When you create an agent in the portal, its Foundry IQ (knowledge) tool runs **w
     > **Note**: The extension is currently listed as **Foundry Toolkit**, but some VS Code labels, commands, or older screenshots may still refer to **AI Toolkit**. In this lab, treat those names as referring to the same extension experience.
 
 1. Select the **Foundry Toolkit** icon in the sidebar, and sign in to your Azure account if you're prompted.
+   
+    > **Note**: If you're unable to sign in with the Foundry Toolkit extension, you my need to select the Azure extension. Sign in there, then navigate back to the Foundry Toolkit to access your resources.
+
 1. Under **Microsoft Foundry Resources**, choose **Set Default Project** and select the project you created earlier.
 1. Expand the project section. Under **Prompt Agents**, select your `product-expert-agent` agent to open the **Agent Builder** window.
 1. In the **Tools** section, find the **Foundry IQ** (knowledge base) tool and select its three dots (**...**) to open the tool configuration popup.
