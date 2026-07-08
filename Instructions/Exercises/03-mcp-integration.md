@@ -67,7 +67,7 @@ At the core of any generative AI project, there’s at least one generative AI m
    - **Deployment name**: Enter a name like "gpt-5"
    - **Deployment type**: Select **Global Standard** (or **Standard** if Global Standard is not available)
    - **Model version**: Leave as default
-   - **Tokens per minute**: Leave as default
+   - **Tokens per minute**: Raise the Tokens per Minute limit to 150000 or higher.
 
 1. Select **Deploy to Microsoft Foundry** in the bottom-left corner.
 
@@ -257,7 +257,7 @@ Now you're ready to run the application and see how the agent uses the MCP tool 
     ```
     Agent created (id: MyAgent:2, name: MyAgent, version: 2)
     Created conversation (id: conv_086911ecabcbc05700BBHIeNRoPSO5tKPHiXRkgHuStYzy27BS)
-    
+
     Agent response: Here are Azure CLI commands to create an Azure Container App with a managed identity:
 
     **1. For a System-assigned Managed Identity**
