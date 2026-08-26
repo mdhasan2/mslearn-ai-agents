@@ -42,6 +42,7 @@ Complete the two core tasks for a working agent, then choose optional tasks base
 you want to practice.
 
 <!-- BEGIN GENERATED: task-table - do not edit by hand; run: python tools/generate_lab_blocks.py -->
+
 | Section | Task | Level | Time |
 | --- | --- | --- | --- |
 | **Core** | [Task 1 – Create and ground an agent](A1-create-and-ground-an-agent.md) | ▰▰▱▱▱ L200 | ~15 min |
@@ -52,6 +53,7 @@ you want to practice.
 | *Optional* | [Task 6 – Promote your assistant to a hosted agent](A6-promote-your-assistant-to-a-hosted-agent.md) | ▰▰▰▱▱ L300 | ~30 min |
 
 **Core tasks:** about **35 minutes**. **Full lab**, including every optional task: about **2 hours 25 minutes**.
+
 <!-- END GENERATED: task-table -->
 
 > **Note**: Some of the technologies used in this exercise are in preview or in active
